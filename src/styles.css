@@ -1,13 +1,3 @@
-// font
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
-
-// icon font
-
-@font-face {
-  src: local('Corinthia'), url('../font/Corinthia-regular.ttf') format('truetype');
-}
-
 body {
   margin: 0;
   padding: 0;
