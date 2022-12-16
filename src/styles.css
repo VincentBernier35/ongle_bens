@@ -22,7 +22,25 @@ body {
 
 .top-line {
   background-color: purple;
+  display: flex;
 }
+.top-line-container {
+  display: flex;
+  text-align: center;
+}
+.location-icon-top-section {
+  height: 30px;
+  margin: 10px 5px 10px 50px;
+}
+.phone-icon-top-section {
+  height: 30px;
+  margin: 10px 5px 10px 50px;
+}
+.adress-phone-top-section {
+  color: white;
+  margin: auto 5px;
+}
+
 
 /********************************/
 /******** menu ***/
@@ -34,7 +52,10 @@ body {
   justify-content: space-evenly;
   margin-bottom: 15px;
 }
-
+.logo {
+  height: 80px;
+  margin: 10px auto;
+}
 .link-menu {
   color: purple;
   font-size: 25px;
@@ -245,30 +266,37 @@ body {
   font-size: 35px;
   border: solid;
   margin: 100px;
-  font-weight: bold;
+
   text-align: center;
   display: flex;
   flex-direction: column;
   background-color: black;
   opacity: 0.8;
+
 }
 .contact-right {
   color: white;
-  font-size: 25px;
+  font-size: 35px;
   border: solid;
   margin: 100px;
-  font-weight: bold;
+
   text-align: center;
   display: flex;
   flex-direction: column;
   background-color: black;
   opacity: 0.8;
 }
-
+.adress {
+  font-size: 30px;
+}
+.adress-mail {
+  font-size: 20px;
+  margin-top: 10px;
+}
 .contact-title {
   text-transform: uppercase;
   color: purple;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -277,7 +305,7 @@ body {
   color: white;
   font-size: 1rem;
   padding: 20px;
-  font-weight: bold;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -339,8 +367,8 @@ body {
   }
 
   .contact-left {
-    font-size: 2rem;
-    margin: 0px;
+
+    margin: 10px;
   }
   .contact-right {
     margin: 10px;
@@ -348,9 +376,13 @@ body {
   }
 
   .contact-title {
-    font-size: 1.9rem;
+
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .adress {
+    color: white;
+    font-size: 20px;
   }
 
   .final-footer {
