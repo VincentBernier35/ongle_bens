@@ -54,19 +54,26 @@ body {
 }
 .logo {
   height: 80px;
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
 }
 .link-menu {
   color: purple;
   font-size: 25px;
   color: purple;
   transition: all 0.1s ease-in-out;
+  text-decoration: none;
 }
 .link-menu:hover {
   transform: scale(1.1);
 }
 
-/******** carousel 2 - swiper ***/
+/******** carousel - swiper ***/
 
 .swiper {
   width: 100%;
@@ -95,9 +102,11 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+
   object-fit: cover;
 }
+
+
 
 /******** le salon  ***/
 
@@ -111,8 +120,8 @@ body {
 }
 
 .p-le_salon {
-  color: grey;
-  max-width: 250px;
+  color: gray;
+  max-width: 80%;
   margin-left: 10%;
   margin-bottom: 35px;
 }
@@ -122,19 +131,13 @@ body {
 .cards {
   width: 100%;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .card {
-  max-width: 400px;
-  margin-right: 25px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-  width: 33.3%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
 }
 
 .card--1 .card__img,
@@ -145,6 +148,12 @@ body {
 .card--2 .card__img,
 .card--2 .card__img--hover {
   background-color: purple;
+  display: flex;
+  justify-content: center;
+}
+
+.card__like {
+  width: 18px;
 }
 
 .card__img {
@@ -178,7 +187,16 @@ body {
   border-top-right-radius: 12px;
   top: 0;
 }
-
+.card {
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05, 1.05);
@@ -193,6 +211,7 @@ body {
 }
 
 .card__category {
+
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -204,6 +223,18 @@ body {
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.card__by {
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
 }
 
 .card:hover .card__img--hover {
@@ -219,6 +250,13 @@ body {
 .card:hover .card__info-hover {
   opacity: 1;
 }
+
+
+
+.span--price {
+  color: #ad7d52;
+}
+
 
 
 .span--price {
@@ -314,24 +352,30 @@ body {
 
 /******** vue mobile ************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .main-container {
     max-width: 100vw;
   }
 
   .top-line {
-    background-color: purple;
+    display: none;
   }
-  .logo-menu {
-  }
+
   .container-menu-link {
     flex-direction: column;
     align-items: center;
   }
-
   .swiper {
     width: 100vw;
+    height: 200px;
   }
+  .carousel-mobil-image {
+    width: 100%;
+    height: 200px;
+  } 
+
+  
+
   .swiper-slide {
     height: 100%;
     object-fit: cover;
@@ -383,6 +427,15 @@ body {
     color: white;
     font-size: 20px;
   }
+
+  .footer {
+  height: 400px;
+  width: 100%;
+  background-image: url('../images/footer300x300.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
   .final-footer {
     font-size: 0.8rem;
