@@ -53,7 +53,7 @@ body {
   margin-bottom: 15px;
 }
 .logo {
-  height: 80px;
+  height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
   align-items: center;
@@ -152,9 +152,6 @@ body {
   justify-content: center;
 }
 
-.card__like {
-  width: 18px;
-}
 
 .card__img {
   visibility: hidden;
@@ -352,13 +349,21 @@ body {
 
 /******** vue mobile ************/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .main-container {
     max-width: 100vw;
   }
 
   .top-line {
     display: none;
+  }
+
+  /* .logo-container {
+    background: white;
+  } */
+
+  .logo {
+    height: 200px;
   }
 
   .container-menu-link {
@@ -383,9 +388,24 @@ body {
 
   /* ******** card ********** */
 
-  .p-le_salon {
-    max-width: 50%;
+
+
+  .title--section {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: purple;
+    margin-left: 15%;
+    margin-top: 35px;
+    margin-bottom: 15px;
   }
+  
+  .p-le_salon {
+    color: gray;
+    max-width: 50%;
+    margin-left: 10%;
+    margin-bottom: 35px;
+  }
+  
 
   /* ******** card ********** */
 
@@ -430,8 +450,8 @@ body {
 
   .footer {
   height: 400px;
-  width: 100%;
-  background-image: url('../images/footer300x300.jpg');
+  background-image: url('../images/contact-desktop.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -441,3 +461,5 @@ body {
     font-size: 0.8rem;
   }
 }
+
+
